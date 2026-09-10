@@ -1,8 +1,36 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hagah · Privacy Policy</title><style>body{background:#F6F1E1;color:#26221C;font-family:Georgia,serif;max-width:620px;margin:0 auto;padding:70px 28px;line-height:1.65}h1{font-weight:400;font-size:30px}h2{font-weight:400;font-size:20px;margin-top:38px}p,li{font-size:17px;color:#3a3225}.w{letter-spacing:.22em;font-size:12px;color:#7A6A4A;text-transform:uppercase}hr{border:0;width:28px;height:1px;background:#8A6A33;margin:26px 0}a{color:#9E2B25}</style>
-<p class="w">Hagah</p><h1>Privacy Policy</h1><hr>
-<p>Hagah collects no data. None.</p>
-<p>There are no accounts, no analytics, no tracking, no advertising, and no servers. The app works entirely offline.</p>
-<p>Your favorites, notes, settings, and reading positions are stored on your device and, if iCloud is enabled, synced through your personal iCloud account, which only you can access. We cannot see any of it.</p>
-<p>The app makes no network requests of any kind.</p>
-<p>Questions: <a href="mailto:vlad@light3capital.com">vlad@light3capital.com</a></p>
-<p class="w">Effective July 2026</p>
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Hagah · Privacy Policy</title>
+<style>
+body{font:17px/1.65 system-ui,-apple-system,sans-serif;max-width:680px;margin:0 auto;padding:52px 24px 80px;color:CanvasText;background:Canvas}h1{font-size:34px;line-height:1.15;letter-spacing:-.025em}h2{font-size:21px;line-height:1.3;margin-top:34px}a{color:LinkText}.caption{font-size:14px;color:GrayText}li{margin-bottom:12px}
+</style>
+<main>
+<p class="caption">HAGAH · Effective September 9, 2026</p>
+<h1>Your words are personal.</h1>
+<p>Hagah is a Bible reading, meditation, and prayer app. No account is required. Hagah has no advertising, tracking, or third-party analytics SDKs. We do not sell personal information.</p>
+<h2>Prayers, notes, and saved passages</h2>
+<p>The current app stores your personal prayers, unfinished drafts, notes, and bookmarks on your device. It does not upload this personal text to Hagah’s translation service or API.Bible. Local files use Apple’s app sandbox and iOS Data Protection.</p>
+<p>Selected preferences, including your meditation passage and translation choice, may sync through your personal Apple iCloud account. Hagah can recover older versions’ saved iCloud content when you upgrade; it does not upload new prayer or note text to the preferences service. Apple’s device backups may include your local app data, according to your Apple settings.</p>
+<h2>Offline and online Bible reading</h2>
+<p>The complete King James Version is included and can be read and searched without connecting to Hagah’s server. Starting with version 4.1’s online translation update, NIV, NKJV, and NLT require a connection when a passage is not already in the recent-passage cache.</p>
+<p>For online reading, Hagah sends the chosen translation and chapter reference to our service, hosted by Cloudflare. When you submit a keyword search in an online translation, its search phrase is also sent. The service retrieves Scripture from API.Bible. It sends API.Bible the requested reference or search phrase, but not your app verification identifier or your device’s IP address.</p>
+<p>Recent online passages are encrypted on the device with an installation-specific key in Apple Keychain, excluded from backups, and expire within 14 days. The service keeps a small shared cache of Scripture and search results for up to 14 days. Search cache keys are hashed, raw search phrases are not stored by our application, and cached results are not linked to an installation identifier. This is not a personal reading-history database.</p>
+<h2>Device verification and service protection</h2>
+<p>Apple’s App Attest verifies that online requests come from a legitimate installation of Hagah. Our service stores the app’s verification key identifier, public verification key, an anti-replay counter, and a last-used time. These records support security and free-service limits. They contain no Apple ID, name, email address, prayer text, or notes, and are removed by daily maintenance after 180 days of inactivity.</p>
+<p>Internet connections necessarily disclose connection information, including an IP address, to Cloudflare. Our application uses a keyed hash of that address for short-lived, in-memory rate limiting; it does not write addresses or request bodies to application logs. Rate-limit buckets reset each minute. Cloudflare, Apple, and API.Bible may process service and security information under their own policies. Connections to the translation service and provider use HTTPS.</p>
+<h2>Your choices and copies</h2>
+<ul>
+<li>Select KJV to read and search without the online translation service.</li>
+<li>Reminders are optional and scheduled locally. The passage can appear in notification previews according to your iOS notification settings. Widgets show Scripture, not personal prayer or note text.</li>
+<li>Sharing or copying a passage sends it only to the destination you choose. Backups exported to Files are readable JSON files containing saved and deleted items. Choose a private location and protect any copies you share.</li>
+<li>Deleting an item moves it to Deleted items so it can be recovered. Removing Hagah deletes its local app data; copies you exported, older iCloud copies, and Apple device backups are managed separately in Files and your Apple account.</li>
+</ul>
+<h2>Apple services and support</h2>
+<p>Apple may collect TestFlight feedback and diagnostics when you use a beta, and processes iCloud, App Attest, and App Store data under its own policies. If you email support, we receive the information you choose to send and use it to respond. Avoid including private prayer or note content unless you want to share it for support.</p>
+<p>For questions about this policy or your privacy choices, contact <a href="mailto:vlad@light3capital.com">vlad@light3capital.com</a>.</p>
+<p class="caption">This policy replaces the earlier offline-only policy. It will be updated if Hagah’s data practices change.</p>
+</main>
+</html>
